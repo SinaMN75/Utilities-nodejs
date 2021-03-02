@@ -1,1 +1,1 @@
- 
+export const database = require("./database");
