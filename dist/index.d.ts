@@ -1,2 +1,2 @@
-export declare const database: any;
+export { connectMongoose, connectSequelize } from "./database";
 //# sourceMappingURL=index.d.ts.map
