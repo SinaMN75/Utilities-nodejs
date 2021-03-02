@@ -1,3 +1,2 @@
-export declare function connectMongoose(mongodbURI: string): void;
-export declare function connectSequelize(): void;
+export declare function hello(): void;
 //# sourceMappingURL=database.d.ts.map
