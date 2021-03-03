@@ -7,15 +7,13 @@ function connectMongoose(mongodbURI) {
 	        .catch(() => console.log("error connecting to mongodb"));
 }
 
-function sequelize(database, username, password, dialect, host) {
-	return new Sequelize(database, username, password, {dialect: dialect, host: host});
-}
+let sequelize;
 
 function connectSequelize(database, username, password, dialect, host) {
-	sequelize(database, username, password, dialect, host)
-		.sync()
-		.then(() => console.log("Sequelize connected"))
-		.catch(() => console.log("Sequelize not connected"));
+	sequelize = new Sequelize(database, username, password, {dialect: dialect, host: host});
+	sequelize.sync()
+	         .then(() => console.log("Sequelize connected"))
+	         .catch(() => console.log("Sequelize not connected"));
 }
 
 module.exports = {
