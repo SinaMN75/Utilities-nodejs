@@ -7,7 +7,7 @@ function connectMongoose(mongodbURI) {
 	        .catch(() => console.log("error connecting to mongodb"));
 }
 
-let sequelize = new Sequelize();
+var sequelize;
 
 function connectSequelize(database, username, password, dialect, host) {
 	sequelize = new Sequelize(database, username, password, {dialect: dialect, host: host});
