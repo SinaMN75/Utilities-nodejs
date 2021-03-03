@@ -3,8 +3,8 @@ const Sequelize = require("sequelize");
 
 function connectMongoose(mongodbURI) {
 	mongoose.connect(mongodbURI, {useNewUrlParser: true, useUnifiedTopology: true})
-		.then(() => console.log(`mongodb connected`))
-		.catch(() => console.log("error connecting to mongodb"));
+	        .then(() => console.log(`mongodb connected`))
+	        .catch(() => console.log("error connecting to mongodb"));
 }
 
 function sequelize(database, username, password, dialect, host) {
@@ -19,5 +19,7 @@ function connectSequelize(database, username, password, dialect, host) {
 }
 
 module.exports = {
-	connectMongoose, sequelize, connectSequelize
+	connectMongoose,
+	sequelize,
+	connectSequelize,
 };

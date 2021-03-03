@@ -1,5 +1,9 @@
-const {sequelize, connectSequelize, connectMongoose} = require("./database");
+const database = require("./database");
+const express = require("express");
+const sequelize = require("sequelize");
 
 module.exports = {
-	connectMongoose, sequelize, connectSequelize
+	express,
+	sequelize,
+	database,
 };
