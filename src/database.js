@@ -1,22 +1,23 @@
 const mongoose = require("mongoose");
 const Sequelize = require("sequelize");
+const log = require("./log");
 
 function connectMongoose(mongodbURI) {
 	mongoose.connect(mongodbURI, {useNewUrlParser: true, useUnifiedTopology: true})
-	        .then(() => console.log(`mongodb connected`))
-	        .catch(() => console.log("error connecting to mongodb"));
+	        .then(() => log.success("mongodb connected"))
+	        .catch(() => log.error("error connecting to mongodb"));
 }
 
-var sequelize;
+let sequelize = new Sequelize("nodeSample", "root", "123456789", {dialect: "mysql", host: "localhost"});
 
-function connectSequelize(database, username, password, dialect, host) {
-	sequelize = new Sequelize(database, username, password, {dialect: dialect, host: host});
+function connectSequelize() {
 	sequelize.sync()
 	         .then(() => console.log("Sequelize connected"))
 	         .catch(() => console.log("Sequelize not connected"));
 }
 
 module.exports = {
+	mongoose,
 	connectMongoose,
 	sequelize,
 	connectSequelize,

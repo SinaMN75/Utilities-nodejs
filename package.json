@@ -2,21 +2,25 @@
   "name": "utilities",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chalk": "^3.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.11.18",
     "mysql2": "^2.2.5",
     "sequelize": "^6.5.0"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/chalk": "^2.2.0",
     "@types/express": "^4.17.11",
     "@types/mongoose": "^5.10.3",
     "@types/node": "^14.14.31",
