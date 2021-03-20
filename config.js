@@ -1,15 +1,16 @@
-let databaseConfig = {
-	sqlDatabase: {
-		database: "",
-		username: "",
-		password: "",
-		dialect: "",
-		host: "",
+let utilitiesConfig = {
+	databaseConfig: {
+		sqlDatabase: {
+			database: "",
+			username: "",
+			password: "",
+			dialect: "",
+			host: "",
+		},
+		mongoURL: "",
 	},
-	mongoURL: "",
-	
 };
 
 module.exports = {
-	databaseConfig,
+	utilitiesConfig,
 };
