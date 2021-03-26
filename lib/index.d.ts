@@ -1,11 +1,6 @@
-export import expressM = require("express");
-export import encryptM = require("./general/encrypt");
-export import nosqlM = require("./database/nosql");
-export import expressExtensionM = require("./general/express");
-export declare namespace u {
-    const express: typeof expressM;
-    const encrypt: typeof encryptM;
-    const nosql: typeof nosqlM;
-    const expressExtension: typeof expressExtensionM;
-}
+import express from "express";
+export declare function connectMongoDB(uri: string): void;
+export declare function encrypt(value: string, action: Function, error: Function): void;
+export declare function compareValues(password: string, hash: string, action: Function): void;
+export declare function notFound(response: express.Response): void;
 //# sourceMappingURL=index.d.ts.map
