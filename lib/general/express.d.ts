@@ -1,3 +1,5 @@
-import { Response } from "express-serve-static-core";
-export declare function notFound(response: Response): void;
+import express from "express";
+export default class ExpressExtension {
+    notFound(response: express.Response): void;
+}
 //# sourceMappingURL=express.d.ts.map

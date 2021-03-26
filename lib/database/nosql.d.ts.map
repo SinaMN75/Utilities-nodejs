@@ -1,1 +1,1 @@
-{"version":3,"file":"nosql.d.ts","sourceRoot":"","sources":["../../src/database/nosql.ts"],"names":[],"mappings":"AAGA,wBAAgB,cAAc,SAI7B"}
+{"version":3,"file":"nosql.d.ts","sourceRoot":"","sources":["../../src/database/nosql.ts"],"names":[],"mappings":"AAEA,MAAM,CAAC,OAAO,OAAO,aAAa;IACjC,cAAc,CAAC,GAAG,EAAE,MAAM;CAK1B"}

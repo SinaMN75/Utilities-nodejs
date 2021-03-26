@@ -1,2 +1,4 @@
-export declare function connectMongoDB(): void;
+export default class NoSqlDatabase {
+    connectMongoDB(uri: string): void;
+}
 //# sourceMappingURL=nosql.d.ts.map

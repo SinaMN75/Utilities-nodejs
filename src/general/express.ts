@@ -1,5 +1,7 @@
-import {Response} from "express-serve-static-core";
+import express from "express";
 
-export function notFound(response: Response) {
-	response.status(404).json({message: "Not Found"});
+export default class ExpressExtension {
+	notFound(response: express.Response) {
+		response.status(404).json({message: "Not Found"});
+	}
 }

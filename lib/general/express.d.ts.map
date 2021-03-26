@@ -1,1 +1,1 @@
-{"version":3,"file":"express.d.ts","sourceRoot":"","sources":["../../src/general/express.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,QAAQ,EAAC,MAAM,2BAA2B,CAAC;AAEnD,wBAAgB,QAAQ,CAAC,QAAQ,EAAE,QAAQ,QAE1C"}
+{"version":3,"file":"express.d.ts","sourceRoot":"","sources":["../../src/general/express.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,SAAS,CAAC;AAE9B,MAAM,CAAC,OAAO,OAAO,gBAAgB;IACpC,QAAQ,CAAC,QAAQ,EAAE,OAAO,CAAC,QAAQ;CAGnC"}
