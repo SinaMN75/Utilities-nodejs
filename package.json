@@ -5,7 +5,7 @@
   "main": "index.js",
   "types": "lib/utilities.d.ts",
   "scripts": {
-    "build": "tsc -p ."
+    "build": "rm -r ./lib/* && tsc -p ."
   },
   "keywords": [],
   "author": "",
