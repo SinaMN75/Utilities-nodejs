@@ -1,12 +1,12 @@
-export import expressM = require("express");
-export import encryptM = require("./general/encrypt");
-export import nosqlM = require("./database/nosql");
-export import expressExtensionM = require("./general/express");
+import {connectMongoDB as cmdb} from "./database/nosql";
+import {compareValues as cmrVls, encrypt as encrpt} from "./general/encrypt";
+import {notFound as ntFnd} from "./general/express";
+import express from "express";
 
-export declare namespace u {
-	const express: typeof expressM;
-	const encrypt: typeof encryptM;
-	const nosql: typeof nosqlM;
-	const expressExtension: typeof expressExtensionM;
-	
-}
+export function connectMongoDB(uri: string) { cmdb(uri); }
+
+export function encrypt(value: string, action: Function, error: Function) { encrpt(value, action, error); }
+
+export function compareValues(password: string, hash: string, action: Function) { cmrVls(password, hash, action); }
+
+export function notFound(response: express.Response) { ntFnd(response); }
