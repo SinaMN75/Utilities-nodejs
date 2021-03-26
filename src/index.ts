@@ -17,4 +17,5 @@ export function compareValues(password: string, hash: string, action: Function) 
 export function notFound(response: express.Response) { ntFnd(response); }
 
 // models
-export const price = prc;
+
+export const Price = prc;
