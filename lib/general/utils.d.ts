@@ -1,2 +1,2 @@
-declare function folderName(): string | undefined;
+export declare function folderName(): string | undefined;
 //# sourceMappingURL=utils.d.ts.map

@@ -1,3 +1,3 @@
-function folderName() {
+export function folderName() {
 	return __dirname.split('/').pop();
 }
