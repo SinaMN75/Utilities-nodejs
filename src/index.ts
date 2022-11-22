@@ -4,3 +4,4 @@ export * from "./general/encrypt";
 export * from "./general/utils";
 
 export const helmet = require("helmet");
+export const chalk = require("chalk");
