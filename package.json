@@ -6,15 +6,14 @@
   "types": "lib/utilities.d.ts",
   "scripts": {
     "build": "rm -r ./lib/* && tsc -p .",
-    "push": "npm run build && git add . && git commit -m \"auto commit\" && git push ",
-    "install": "npm install"
+    "push": "npm run build && git add . && git commit -m \"auto commit\" && git push "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "chalk": "^5.1.2",
+    "chalk": "^4.1.2",
     "express": "^4.17.1",
     "helmet": "^6.0.0",
     "mongoose": "^5.12.2"
