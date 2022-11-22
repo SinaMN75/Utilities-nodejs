@@ -6,7 +6,8 @@
   "types": "lib/utilities.d.ts",
   "scripts": {
     "build": "rm -r ./lib/* && tsc -p .",
-    "push": "npm run build && git add . && git commit -m \"auto commit\" && git push "
+    "push": "npm run build && git add . && git commit -m \"auto commit\" && git push ",
+    "install": "npm install"
   },
   "keywords": [],
   "author": "",
