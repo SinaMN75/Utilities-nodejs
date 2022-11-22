@@ -2,6 +2,6 @@ export * from "./database/nosql";
 export * from "./general/express";
 export * from "./general/encrypt";
 export * from "./general/utils";
-export declare const helmet: any;
-export declare const chalk: any;
+export * from "helmet";
+export * from "chalk";
 //# sourceMappingURL=index.d.ts.map
