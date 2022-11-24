@@ -7,11 +7,11 @@ export interface IPrice extends mongoose.Document {
 
 export const Price = mongoose.model<IPrice>("Price", new mongoose.Schema({
 	                                                                         buyPrice: {
-		                                                                         type: Number,
+		                                                                         type: String,
 		                                                                         required: false,
 	                                                                         },
 	                                                                         sellPrice: {
-		                                                                         type: Number,
+		                                                                         type: String,
 		                                                                         required: false,
 	                                                                         },
                                                                          }));
