@@ -1,15 +1,11 @@
-import ex from "express";
-import mongo from "mongoose";
-import jo from "joi";
+export import express = require("express");
+export import mongoose = require("mongoose");
+export import joi = require("joi");
+export import helmet = require("helmet");
+export import chalk = require("chalk");
+export import morgan = require("morgan");
 
 export * from "./database/nosql"
 export * from "./general/express";
 export * from "./general/encrypt";
 export * from "./general/utils";
-
-export const express = ex;
-export const mongoose = mongo;
-export const joi = jo;
-export const helmet = require("helmet");
-export const chalk = require("chalk");
-export const morgan = require("morgan");
