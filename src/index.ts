@@ -4,9 +4,9 @@ export import joi = require("joi");
 export import chalk = require("chalk");
 export import morgan = require("morgan");
 export import cors = require("cors");
+export import sequelize = require("sequelize");
 
 export const helmet = require("helmet");
-export const sequelize = require("sequelize");
 
 export * from "./database/nosql"
 export * from "./general/express";
