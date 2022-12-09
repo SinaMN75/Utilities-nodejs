@@ -8,7 +8,7 @@ export import sequelize = require("sequelize");
 
 export const helmet = require("helmet");
 
-export * from "./database/nosql"
+export * from "./database/connection"
 export * from "./general/express";
 export * from "./general/encrypt";
 export * from "./general/utils";
