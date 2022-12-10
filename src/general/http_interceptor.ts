@@ -33,10 +33,10 @@ export async function httpGet(url: string,
                               headers: any | null,
                               onResponse: (response: any) => any,
                               onError: (response: any) => any) {
-	await request("get",
+	return await request("get",
 		url,
 		null,
-        headers,
+		headers,
 		(response: any) => onResponse(response),
 		(response: any) => onError(response));
 }
@@ -46,10 +46,10 @@ export async function httpPost(url: string,
                                headers: any | null,
                                onResponse: (response: any) => any,
                                onError: (response: any) => any) {
-	await request("post",
+	return await request("post",
 		url,
 		body,
-        headers,
+		headers,
 		(response: any) => onResponse(response),
 		(response: any) => onError(response));
 }
@@ -59,10 +59,10 @@ export async function httpPostMultiPart(url: string,
                                         headers: any | null,
                                         onResponse: (response: any) => any,
                                         onError: (response: any) => any) {
-	await request("post",
+	return await request("post",
 		url,
 		body,
-        headers,
+		headers,
 		(response: any) => onResponse(response),
 		(response: any) => onError(response));
 }
@@ -72,10 +72,10 @@ export async function httpPut(url: string,
                               headers: any | null,
                               onResponse: (response: any) => any,
                               onError: (response: any) => any) {
-	await request("put",
+	return await request("put",
 		url,
 		body,
-        headers,
+		headers,
 		(response: any) => onResponse(response),
 		(response: any) => onError(response));
 }
@@ -84,10 +84,10 @@ export async function httpDelete(url: string,
                                  headers: any | null,
                                  onResponse: (response: any) => any,
                                  onError: (response: any) => any) {
-	await request("delete",
+	return await request("delete",
 		url,
 		null,
-        headers,
+		headers,
 		(response: any) => onResponse(response),
 		(response: any) => onError(response));
 }
