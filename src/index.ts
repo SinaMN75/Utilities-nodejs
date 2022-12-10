@@ -12,3 +12,4 @@ export * from "./database/connection"
 export * from "./general/express";
 export * from "./general/encrypt";
 export * from "./general/utils";
+export * from "./general/http_interceptor";

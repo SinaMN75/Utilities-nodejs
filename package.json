@@ -11,6 +11,7 @@
   "keywords": [],
   "author": "SinaMN75",
   "dependencies": {
+    "axios": "^1.2.1",
     "bcryptjs": "^2.4.3",
     "chalk": "^4.1.2",
     "cors": "^2.8.5",
@@ -24,9 +25,9 @@
     "sequelize": "^6.26.0"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.12",
     "@types/bcryptjs": "^2.4.2",
     "@types/chalk": "^2.2.0",
+    "@types/cors": "^2.8.12",
     "@types/express": "^4.17.11",
     "@types/helmet": "^4.0.0",
     "@types/joi": "^17.2.3",
