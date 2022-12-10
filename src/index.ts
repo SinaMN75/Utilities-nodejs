@@ -6,6 +6,7 @@ export import morgan = require("morgan");
 export import cors = require("cors");
 export import sequelize = require("sequelize");
 
+export const dotEnv = require("dotenv");
 export const helmet = require("helmet");
 
 export * from "./database/connection"

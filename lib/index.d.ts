@@ -5,6 +5,7 @@ export import chalk = require("chalk");
 export import morgan = require("morgan");
 export import cors = require("cors");
 export import sequelize = require("sequelize");
+export declare const dotEnv: any;
 export declare const helmet: any;
 export * from "./database/connection";
 export * from "./general/express";
