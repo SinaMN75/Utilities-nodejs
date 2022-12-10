@@ -6,7 +6,7 @@ export function notFound(response: express.Response) {
 	const router: Router = express.Router();
 }
 
-export function response(statusCode: number, message: string, result: any) {
+export function response(result: any, statusCode: number = 200, message: string = "") {
 	return {
 		message: message,
 		status: statusCode,
