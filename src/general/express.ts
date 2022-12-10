@@ -6,6 +6,16 @@ export function notFound(response: express.Response) {
 	const router: Router = express.Router();
 }
 
+export function response(response: express.Response, statusCode: number, message: string, result: any) {
+	return response.status(statusCode).json(
+		{
+			message: message,
+			status: statusCode,
+			result: result
+		}
+	);
+}
+
 export function setupExpress(app: Express) {
 	app.use(express.json());
 	app.use(express.urlencoded({extended: false}));
