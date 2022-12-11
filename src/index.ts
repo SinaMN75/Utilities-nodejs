@@ -8,6 +8,7 @@ export import sequelize = require("sequelize");
 
 export const helmet = require("helmet");
 export const path = require("path");
+export const dotEnv = require("dotenv");
 
 export * from "./database/connection"
 export * from "./general/express";

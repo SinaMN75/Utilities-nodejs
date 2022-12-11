@@ -1,5 +1,5 @@
 import express, {Express, Router} from "express";
-import {cors, helmet, morgan} from "../index";
+import {cors, dotEnv, helmet, morgan} from "../index";
 
 export function notFound(response: express.Response) {
 	response.status(404).json({message: "Not Found"});
@@ -21,4 +21,5 @@ export function setupExpress(app: Express) {
 	app.use(express.static("public"));
 	app.use(helmet());
 	app.use(morgan("dev"));
+	dotEnv.config();
 }

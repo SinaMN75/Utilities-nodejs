@@ -7,6 +7,7 @@ export import cors = require("cors");
 export import sequelize = require("sequelize");
 export declare const helmet: any;
 export declare const path: any;
+export declare const dotEnv: any;
 export * from "./database/connection";
 export * from "./general/express";
 export * from "./general/encrypt";
