@@ -1,16 +1,23 @@
 import express, {Express, Router} from "express";
 import {cors, dotEnv, helmet, morgan} from "../index";
 
+interface ResponseOptions {
+	message: string;
+	statusCode: number;
+	count: number;
+}
+
 export function notFound(response: express.Response) {
 	response.status(404).json({message: "Not Found"});
 	const router: Router = express.Router();
 }
 
-export function response(result: any, statusCode: number = 200, message: string = "") {
+export function response(result: any, options: ResponseOptions) {
 	return {
-		message: message,
-		status: statusCode,
-		result: result
+		message: options.message,
+		status: options.statusCode,
+		count: options.count,
+		result: result,
 	};
 }
 
