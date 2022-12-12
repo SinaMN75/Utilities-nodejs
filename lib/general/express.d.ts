@@ -1,11 +1,11 @@
 import express, { Express } from "express";
 interface ResponseOptions {
-    message: string;
-    statusCode: number;
-    count: number;
+    message?: string;
+    statusCode?: number;
+    count?: number;
 }
 export declare function notFound(response: express.Response): void;
-export declare function response(result: any, options: ResponseOptions): {
+export declare function response(result: any, options?: ResponseOptions): {
     message: string;
     status: number;
     count: number;

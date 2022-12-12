@@ -2,9 +2,9 @@ import express, {Express, Router} from "express";
 import {cors, dotEnv, helmet, morgan} from "../index";
 
 interface ResponseOptions {
-	message: string;
-	statusCode: number;
-	count: number;
+	message?: string;
+	statusCode?: number;
+	count?: number;
 }
 
 export function notFound(response: express.Response) {
@@ -12,11 +12,11 @@ export function notFound(response: express.Response) {
 	const router: Router = express.Router();
 }
 
-export function response(result: any, options: ResponseOptions) {
+export function response(result: any, options?: ResponseOptions) {
 	return {
-		message: options.message,
-		status: options.statusCode,
-		count: options.count,
+		message: options?.message ?? "",
+		status: options?.statusCode ?? 200,
+		count: options?.count ?? -1,
 		result: result,
 	};
 }
