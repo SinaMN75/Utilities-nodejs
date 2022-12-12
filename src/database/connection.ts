@@ -1,6 +1,4 @@
-import mongoose from "mongoose";
-import {logOk} from "../general/utils";
-import {sequelize} from "../index";
+import {sequelize, logOk, mongoose} from "../index";
 import {Dialect, Sequelize} from "sequelize";
 
 export const connectMongoDB = (uri: string) => {
