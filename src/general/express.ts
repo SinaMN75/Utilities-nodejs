@@ -1,5 +1,5 @@
 import express, {Express, Router} from "express";
-import {cors, dotEnv, helmet, morgan} from "../index";
+import {cors, dotEnv, expressFileUpload, helmet, morgan} from "../index";
 
 interface ResponseOptions {
 	message?: string;
@@ -28,5 +28,6 @@ export function setupExpress(app: Express) {
 	app.use(express.static("public"));
 	app.use(helmet());
 	app.use(morgan("dev"));
+	app.use(expressFileUpload());
 	dotEnv.config();
 }
