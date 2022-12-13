@@ -8,6 +8,7 @@ export import sequelize = require("sequelize");
 export import expressFileUpload = require("express-fileupload");
 export declare const helmet: any;
 export declare const path: any;
+export declare const uuid: any;
 export declare const dotEnv: any;
 export * from "./database/connection";
 export * from "./general/express";

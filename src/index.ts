@@ -6,8 +6,10 @@ export import morgan = require("morgan");
 export import cors = require("cors");
 export import sequelize = require("sequelize");
 export import expressFileUpload = require("express-fileupload");
+
 export const helmet = require("helmet");
 export const path = require("path");
+export const uuid = require("uuid");
 export const dotEnv = require("dotenv");
 
 export * from "./database/connection"
