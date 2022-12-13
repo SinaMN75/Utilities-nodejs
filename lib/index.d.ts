@@ -5,6 +5,7 @@ export import chalk = require("chalk");
 export import morgan = require("morgan");
 export import cors = require("cors");
 export import sequelize = require("sequelize");
+export import expressFileUpload = require("express-fileupload");
 export declare const helmet: any;
 export declare const path: any;
 export declare const dotEnv: any;
