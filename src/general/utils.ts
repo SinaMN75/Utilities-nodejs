@@ -1,5 +1,5 @@
 import chalk from "chalk";
-import {uuid} from "../index";
+import {uuidv1, uuidv4} from "../index";
 
 export function folderName(dirName: string) {
 	return dirName.split('/').pop();
@@ -17,6 +17,10 @@ export function log(message: string) {
 	console.log(message);
 }
 
-export function randomUUID() {
-	return uuid.uuidv4();
+export function randomUUIDV1() {
+	return uuidv1();
+}
+
+export function randomUUIDV4() {
+	return uuidv4();
 }

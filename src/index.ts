@@ -9,7 +9,7 @@ export import expressFileUpload = require("express-fileupload");
 
 export const helmet = require("helmet");
 export const path = require("path");
-export const uuid = require("uuid");
+export const {v1: uuidv1, v4: uuidv4} = require("uuid");
 export const dotEnv = require("dotenv");
 
 export * from "./database/connection"
