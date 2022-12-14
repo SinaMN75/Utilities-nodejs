@@ -7,6 +7,7 @@ export import cors = require("cors");
 export import sequelize = require("sequelize");
 export import expressFileUpload = require("express-fileupload");
 export import jsonWebToken = require("jsonwebtoken");
+export import bcryptjs = require("bcryptjs");
 
 export const helmet = require("helmet");
 export const path = require("path");
