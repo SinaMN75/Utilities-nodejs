@@ -1,17 +1,9 @@
-import {compare, genSalt, hash} from "bcryptjs";
+import {bcryptjs} from "../index";
 
-export function encrypt(value: string, action: Function, error: Function) {
-	genSalt(10, (err: Error, salt: string) => {
-		hash(value, salt, (e: Error, hash: string) => {
-			if (e) error(e);
-			else action(hash);
-		});
-	});
+export async function encrypt(value: string) {
+	return await bcryptjs.hash(value, 10);
 }
 
-export function compareValues(password: string, hash: string, action: Function) {
-	compare(password, hash, (err: Error, success: boolean) => {
-		if (err) throw err;
-		action(success);
-	});
+export async function compareValues(hashedValue: string, actualValue: string) {
+	return await bcryptjs.compare(actualValue, hashedValue)
 }
