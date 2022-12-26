@@ -1,14 +1,16 @@
-import {sequelize, logOk, mongoose} from "../index";
+import {logOk, mongoose, sequelize} from "../index";
 import {Dialect, Sequelize} from "sequelize";
 
 export const connectMongoDB = (uri: string) => {
 	mongoose.connect(uri, () => logOk(`${uri} is running`));
 };
 
-export const sequelizeDatabase = (database: string, username: string, password: string, dialect: Dialect): Sequelize =>
-	new sequelize.Sequelize(database, username, password, {
+export const sequelizeDatabase = (database: string, username: string, password: string, dialect: Dialect): Sequelize => {
+	require('sequelize-hierarchy')(Sequelize);
+	return new sequelize.Sequelize(database, username, password, {
 		dialect: dialect,
 	});
+};
 
 export function connectToSequelize(database: string, username: string, password: string, dialect: Dialect) {
 	sequelizeDatabase(database, username, password, dialect).authenticate()

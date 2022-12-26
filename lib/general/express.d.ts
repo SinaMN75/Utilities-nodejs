@@ -5,6 +5,7 @@ interface ResponseOptions {
     count?: number;
 }
 export declare function notFound(response: express.Response): void;
+export declare function sendResponse(response: express.Response): void;
 export declare function response(result: any, options?: ResponseOptions): {
     message: string;
     status: number;
