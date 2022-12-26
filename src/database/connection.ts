@@ -6,7 +6,7 @@ export const connectMongoDB = (uri: string) => {
 };
 
 export const sequelizeDatabase = (database: string, username: string, password: string, dialect: Dialect): Sequelize => {
-	require('sequelize-hierarchy')(Sequelize);
+	require('sequelize-hierarchy-fork')(Sequelize);
 	return new sequelize.Sequelize(database, username, password, {
 		dialect: dialect,
 	});
