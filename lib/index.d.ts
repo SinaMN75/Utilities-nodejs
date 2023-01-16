@@ -12,7 +12,6 @@ export declare const helmet: any;
 export declare const path: any;
 export declare const uuidv1: any, uuidv4: any;
 export declare const dotEnv: any;
-export declare const sequelizeHierarchy: any;
 export * from "./database/connection";
 export * from "./general/express";
 export * from "./general/encrypt";

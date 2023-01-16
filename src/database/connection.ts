@@ -14,7 +14,6 @@ export const connectMongoDB = (uri: string) => {
 };
 
 export const sequelizeDatabase = (settings: sequelizeSettings): Sequelize => {
-	require('sequelize-hierarchy-fork')(Sequelize);
 	return new sequelize.Sequelize(settings.database, settings.username, settings.password, {
 		host: settings.host,
 		dialect: settings.dialect,
