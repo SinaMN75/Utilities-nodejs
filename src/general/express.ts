@@ -28,7 +28,11 @@ export function response(result: any, options?: ResponseOptions) {
 export function setupExpress(app: Express) {
 	app.use(express.json());
 	app.use(express.urlencoded({extended: false}));
-	app.use(cors());
+	app.use(cors({
+		origin: '*',
+		methods: ['GET', 'POST', "PUT", "DELETE"],
+		allowedHeaders: ['Content-Type'],
+	}));
 	app.use(express.static("public"));
 	app.use(helmet());
 	app.use(morgan("dev"));
