@@ -8,6 +8,7 @@ export import sequelize = require("sequelize");
 export import expressFileUpload = require("express-fileupload");
 export import jsonWebToken = require("jsonwebtoken");
 export import bcryptjs = require("bcryptjs");
+export import directoryTree = require("directory-tree");
 export declare const helmet: any;
 export declare const path: any;
 export declare const uuidv1: any, uuidv4: any;
